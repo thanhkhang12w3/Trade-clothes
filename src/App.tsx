@@ -192,7 +192,11 @@ function Header({
         >
           {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
-        <Link className="brand" to="/" aria-label="Trạm Đổi Đồ - Trang chủ">
+        <Link
+          className="brand"
+          to="/"
+          aria-label="Trạm Đổi Đồ (ReLoop) - Trang chủ"
+        >
           <span className="brand-mark">
             <ArrowRightLeft size={21} strokeWidth={2.2} />
           </span>
@@ -200,7 +204,7 @@ function Header({
             <strong>
               Trạm <span>Đổi Đồ</span>
             </strong>
-            <small>Thời trang tuần hoàn</small>
+            <small>ReLoop · Thời trang tuần hoàn</small>
           </span>
         </Link>
 
@@ -308,6 +312,11 @@ function HomePage({
                 Xem danh mục <ArrowDown size={15} />
               </a>
             </div>
+            <ol className="swap-steps" aria-label="Quy trình đổi đồ">
+              <li>Đăng món đồ</li>
+              <li>Gửi đề nghị đổi</li>
+              <li>Chốt cách giao nhận</li>
+            </ol>
             <div className="hero-proof">
               <span className="proof-avatars" aria-hidden="true">
                 <i>H</i>
@@ -322,8 +331,8 @@ function HomePage({
           </div>
           <div className="hero-art" aria-label="Thời trang secondhand">
             <img
-              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=90"
-              alt="Bạn trẻ lựa chọn trang phục trong cửa hàng thời trang"
+              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=90"
+              alt="Trang phục được sắp xếp gọn gàng để tiếp tục được yêu thích"
               fetchPriority="high"
               onError={(event) => {
                 event.currentTarget.src = fallbackImage;
@@ -1085,7 +1094,7 @@ function Footer() {
               <strong>
                 Trạm <span>Đổi Đồ</span>
               </strong>
-              <small>Thời trang tuần hoàn</small>
+              <small>ReLoop · Thời trang tuần hoàn</small>
             </span>
           </Link>
           <p>
@@ -1111,7 +1120,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom page-width">
-        <span>© 2026 Trạm Đổi Đồ. Mặc lại, yêu thêm.</span>
+        <span>© 2026 Trạm Đổi Đồ (ReLoop). Mặc lại, yêu thêm.</span>
         <span>
           <CircleHelp size={14} />
           Cùng nhau trao đổi an tâm

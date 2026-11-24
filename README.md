@@ -1,4 +1,4 @@
-# Trạm Đổi Đồ
+# Trạm Đổi Đồ (ReLoop)
 
 Ứng dụng marketplace trao đổi quần áo cũ, xây dựng bằng React, TypeScript, Vite và React Router.
 
